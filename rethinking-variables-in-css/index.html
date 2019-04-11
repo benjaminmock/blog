@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 2.3.4"/><title data-react-helmet="true">Rethinking Variables in CSS</title><link data-react-helmet="true" rel="icon" type="image/png" href="https://jxnblk.com/favicon.png"/><link data-react-helmet="true" rel="apple-touch-icon-precomposed" href="https://jxnblk.com/avatar.png"/><meta data-react-helmet="true" name="twitter:site" content="@jxnblk"/><meta data-react-helmet="true" name="twitter:image" content="https://jxnblk.com/avatar.png"/><meta data-react-helmet="true" name="description" content="The writing of Brent Jackson"/><meta data-react-helmet="true" name="og:title" content="Rethinking Variables in CSS"/><meta data-react-helmet="true" name="og:description" content="The writing of Brent Jackson"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Rethinking Variables in CSS"/><meta data-react-helmet="true" name="twitter:description" content="The writing of Brent Jackson"/><meta data-react-helmet="true" name="twitter:creator" content="Brent Jackson"/><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml"/><link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/blog/component---node-modules-jxnblk-gatsby-theme-mdx-blog-src-templates-post-js-72eda7e841b1d57edf79.js"/><link as="script" rel="preload" href="/blog/app-8378fda3fefeb913247c.js"/><link as="script" rel="preload" href="/blog/webpack-runtime-79011fa241e85dc74868.js"/><link as="fetch" rel="preload" href="/blog/static/d/664/path---rethinking-variables-in-css-919-075-3CGf3qluO2EOuptMhiDZEzAcq0A.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><style data-emotion-css="aff8qr">*{box-sizing:border-box;}body{margin:0;color:#000;background-color:#fff;}</style><style data-emotion-css="jph4cv">.css-jph4cv{min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-family:system-ui,sans-serif;font-weight:400;line-height:1.5;}</style><style data-emotion-css="1d20uir">.css-1d20uir{box-sizing:border-box;min-width:0;min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;font-family:system-ui,sans-serif;font-weight:400;line-height:1.5;}</style><div class="css-1d20uir ebfsqx70"><style data-emotion-css="1xi4blx">.css-1xi4blx{box-sizing:border-box;min-width:0;}</style><header class="css-1xi4blx ebfsqx70"><style data-emotion-css="70qvj9">.css-70qvj9{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style><style data-emotion-css="ysk1ys">.css-ysk1ys{box-sizing:border-box;min-width:0;width:100%;max-width:832px;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;margin-left:auto;margin-right:auto;padding:32px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style><div class="css-ysk1ys ebfsqx70"><style data-emotion-css="ktaafy">.css-ktaafy{margin-top:0;margin-bottom:0;font-size:48px;}</style><style data-emotion-css="6yokl2">.css-6yokl2{margin-top:32px;margin-bottom:16px;font-family:system-ui,sans-serif;font-size:20px;font-weight:700;line-height:1.25;margin-top:0;margin-bottom:0;font-size:48px;}</style><h3 class="css-6yokl2"><style data-emotion-css="1unrqcp">.css-1unrqcp{color:inherit;-webkit-text-decoration:none;text-decoration:none;}</style><a class="css-1unrqcp" href="/blog/">Jxnblog</a></h3><style data-emotion-css="1efs42r">.css-1efs42r{box-sizing:border-box;min-width:0;margin-left:auto;margin-right:auto;margin-left:auto;margin-right:auto;}</style><div class="css-1efs42r ebfsqx70"></div><style data-emotion-css="1lxhdx8">.css-1lxhdx8{-webkit-appearance:none;-moz-appearance:none;appearance:none;text-transform:uppercase;-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;border:0;padding:12px;color:inherit;background-color:#f9faff;font-family:inherit;font-size:12px;font-weight:700;}.css-1lxhdx8:focus{outline:2px solid;}</style><style data-emotion-css="ncnnso">.css-ncnnso{box-sizing:border-box;min-width:0;-webkit-appearance:none;-moz-appearance:none;appearance:none;text-transform:uppercase;-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;border:0;padding:12px;color:inherit;background-color:#f9faff;font-family:inherit;font-size:12px;font-weight:700;}.css-ncnnso:focus{outline:2px solid;}</style><button title="Change Color Mode" class="css-ncnnso ebfsqx70">light</button></div></header><style data-emotion-css="rhqv7s">.css-rhqv7s{box-sizing:border-box;min-width:0;width:100%;max-width:832px;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;margin-left:auto;margin-right:auto;padding:32px;}</style><div class="css-rhqv7s ebfsqx70"><style data-emotion-css="8m7zjt">.css-8m7zjt{margin-top:32px;margin-bottom:16px;font-family:system-ui,sans-serif;font-size:32px;font-weight:700;line-height:1.25;}@media screen and (min-width:40em){.css-8m7zjt{font-size:48px;}}</style><h1 class="css-8m7zjt">Rethinking Variables in CSS</h1><style data-emotion-css="85laxa">.css-85laxa{font-size:12px;font-weight:700;}@media screen and (min-width:40em){.css-85laxa{font-size:12px;}}</style><style data-emotion-css="12huyjx">.css-12huyjx{margin:0;margin-bottom:32px;font-size:16px;font-size:12px;font-weight:700;}@media screen and (min-width:40em){.css-12huyjx{font-size:20px;}}@media screen and (min-width:40em){.css-12huyjx{font-size:12px;}}</style><p class="css-12huyjx">May 08, 2015</p><div _frontmatter="[object Object]" class="css-0"><style data-emotion-css="rmsxrp">.css-rmsxrp{margin:0;margin-bottom:32px;font-size:16px;}@media screen and (min-width:40em){.css-rmsxrp{font-size:20px;}}</style><p class="css-rmsxrp">CSS was first introduced as a way to reduce the complexity of using inline styles and to help separate concerns. After years of ballooning stylesheets with the same values being used over and over and losing sync, CSS preprocessors introduced variables to help keep values defined in a single place. Soon <style data-emotion-css="1o1roib">.css-1o1roib{color:#33e;}.css-1o1roib:hover{color:#228;}</style><a href="http://dev.w3.org/csswg/css-variables/" class="css-1o1roib">custom properties</a> will be part of the CSS specification, which promises a native, more robust approach than what preprocessors can do.</p><p class="css-rmsxrp">While variables and custom properties make updating multiple instances of the same value trivial, we often still end up with multiple instances of the same property-value definitions spread throughout a global stylesheet.</p><p class="css-rmsxrp"><em class="css-0">Bear with me for a second and consider this a thought experiment…</em></p><p class="css-rmsxrp">What if instead of repeating these definitions in our stylesheets, we treated CSS rulesets as variables? That is, instead of defining something like a color across many styles, it’s only defined once, and is used by applying classes to HTML elements —i.e. .green instead of $green. We could vastly DRY up our stylesheets while making only a minimal impact on HTML size. If you apply this idea widely enough, the entire stylesheet can become so-called critical CSS.</p><p class="css-rmsxrp">Effectively, this means removing complexity from stylesheets, which are global and leaky, and moving that complexity to the templating system, which is much more isolated and easier to manage.</p><p class="css-rmsxrp">I know that this approach has sped up the development process in my professional work and for small open source projects, and I’ve never seen any evidence that this would break down when working at scale. Though I suspect that very few have ever really attempted this, and it hasn’t been long enough to know what sort of problems this might cause over the long term.</p><style data-emotion-css="10c9lvw">.css-10c9lvw{margin-top:32px;margin-bottom:16px;font-family:system-ui,sans-serif;font-size:24px;font-weight:700;line-height:1.25;}@media screen and (min-width:40em){.css-10c9lvw{font-size:32px;}}</style><h2 id="is-this-semantic" class="css-10c9lvw"><a href="#is-this-semantic" class="css-1unrqcp">Is this semantic?</a></h2><p class="css-rmsxrp">Yes, read this article from Nicolas Gallagher — it is the best answer to this question on the Internet: <a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/" class="css-1o1roib">About HTML Semantics and Front-End Architecture</a>. Classes do not affect HTML semantics, and you absolutely should use well structured, accessible, semantic HTML. Period.</p><h2 id="what-about-mixing-concerns" class="css-10c9lvw"><a href="#what-about-mixing-concerns" class="css-1unrqcp">What about mixing concerns?</a></h2><p class="css-rmsxrp">Web components and things like React already do this and for good reason. The CSS Zen Garden is a pipe dream. If you could actually redesign something by only editing the stylesheet, we would all be using the same template and no one would be writing any new HTML.</p><h2 id="wont-this-lead-to-a-lot-of-classes-in-html" class="css-10c9lvw"><a href="#wont-this-lead-to-a-lot-of-classes-in-html" class="css-1unrqcp">Won’t this lead to a lot of classes in HTML?</a></h2><p class="css-rmsxrp">If you’re concerned about this, I’m concerned about how much repetition you have in your templates. Most web projects will be utilizing some sort of templating system. Just as with any code, templates should be kept DRY. If the markup for something like a modal overlay is defined multiple times across templates, it should be consolidated to a single place. Living style guides and using a component-based system like React can help enforce this approach across a team.</p><h2 id="wouldnt-there-be-a-huge-maintenance-cost" class="css-10c9lvw"><a href="#wouldnt-there-be-a-huge-maintenance-cost" class="css-1unrqcp">Wouldn’t there be a huge maintenance cost?</a></h2><p class="css-rmsxrp">Potentially. Though, I’ve only seen a handful of similar techniques at scale, and I suspect that, if it were implemented in a sensible way, it would be far better than the technical debt we incur with current CSS practices.</p><h2 id="what-about-web-components" class="css-10c9lvw"><a href="#what-about-web-components" class="css-1unrqcp">What about web components?</a></h2><p class="css-rmsxrp">Web components add a whole new dimension to this dynamic by introducing style encapsulation and composability — essentially reducing utility styles to an implementation detail. I’ll try to address what that could look like in a follow-up post.</p><p class="css-rmsxrp"><em class="css-0">To be continued…</em></p></div></div><style data-emotion-css="1sve6jg">.css-1sve6jg{box-sizing:border-box;min-width:0;padding-top:64px;padding-bottom:64px;padding-top:64px;padding-bottom:64px;}</style><footer class="css-1sve6jg ebfsqx70"><style data-emotion-css="1pwdq0r">.css-1pwdq0r{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;font-weight:bold;font-size:14px;}</style><style data-emotion-css="foiv63">.css-foiv63{box-sizing:border-box;min-width:0;width:100%;max-width:832px;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;margin-left:auto;margin-right:auto;padding:32px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;font-weight:bold;font-size:14px;}</style><div class="css-foiv63 ebfsqx70"><style data-emotion-css="1ernv0i">.css-1ernv0i{box-sizing:border-box;min-width:0;margin-left:-16px;margin-left:-16px;}</style><div class="css-1ernv0i ebfsqx70"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-24 -24 176 176" width="48" height="48" fill="currentcolor" style="display:block;margin:0"><path d="
+M64 0 L64 4 L76 4 L74 6 L94 14 L92 16
+L104 20 L100 22 L106 28 L102 28 L106 56
+Q110 62 110 70 T105 84
+L96 108
+C92 116 76 128 64 128
+C52 128 36 116 32 108
+L23 84
+Q18 78 18 70 T22 56
+L22 22 L26 24 L34 12 L36 16z
+
+M72 40
+Q56 30 40 30
+Q32 34 30 48
+L30 48
+L28 74
+C28 81 37 102 38 104
+C46 118 62 121 64 121
+C66 121 82 118 90 104
+
+C91 102 100 81 100 74
+L99 52
+L94 40
+L92 42
+L84 38
+L84 42
+L74 36
+
+M44 62
+A5.5 5.5 0 0 0 44 73
+A5.5 5.5 0 0 0 44 62
+
+M84 62
+A5.5 5.5 0 0 0 84 73
+A5.5 5.5 0 0 0 84 62
+
+M57 88 H71
+A2 2 0 0 1 71 92
+H57
+A2 2 0 0 1 57 88
+
+M53 104 H75
+A2 2 0 0 1 75 108
+H53
+A2 2 0 0 1 53 104
+
+M33.3 60.4
+C34.6 57.8 37 55.9 39.7 55.2
+C43 54.4 46.8 55.3 50.4 58
+C51.3 58.6 52.5 58.4 53.2 57.5
+C53.8 56.6 53.6 55.4 52.7 54.7
+C46.8 50.5 41.8 50.5 38.7 51.3
+C34.8 52.3 31.5 54.9 29.7 58.6
+C29.2 59.6 29.6 60.8 30.6 61.3
+C30.9 61.4 31.2 61.5 31.5 61.5
+C32.2 61.5 32.9 61.1 33.3 60.4
+z
+
+M97.7 61.9
+C98.5 61.2  98.6  59.9  97.9  59.1
+C94.3 55  90.1  52.9  85.4  53
+C82 53  78.3  54.2  74.3  56.6
+C73.3 57.2  73  58.4  73.6  59.3
+C74.2 60.3  75.4  60.6  76.3  60
+C79.7 58  82.7  57  85.5  57
+C89 57  92.1  58.5  95  61.7
+C95.4 62.2  95.9  62.4  96.5  62.4
+C96.8 62.4 97.3 62.2 97.7 61.9
+z
+"></path></svg></div><style data-emotion-css="1iwkf7i">.css-1iwkf7i{box-sizing:border-box;min-width:0;margin-left:8px;margin-right:8px;margin-left:8px;margin-right:8px;}</style><div class="css-1iwkf7i ebfsqx70"><a href="https://jxnblk.com" class="css-1o1roib">© 2019 Jxnblk</a></div><div class="css-1iwkf7i ebfsqx70"><a href="https://github.com/jxnblk/blog" class="css-1o1roib">GitHub</a></div><div class="css-1iwkf7i ebfsqx70">Built with<!-- --> <a href="https://gatsbyjs.org" class="css-1o1roib">Gatsby</a> &amp; <a href="https://github.com/jxnblk/gatsby-theme-mdx-blog" class="css-1o1roib">@jxnblk/gatsby-theme-mdx-blog</a></div></div></footer></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-4603832-6', 'auto', {});
+      
+      
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---node-modules-jxnblk-gatsby-theme-mdx-blog-src-templates-post-js","jsonName":"rethinking-variables-in-css-919","path":"/rethinking-variables-in-css/"};window.dataPath="664/path---rethinking-variables-in-css-919-075-3CGf3qluO2EOuptMhiDZEzAcq0A";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-8378fda3fefeb913247c.js"],"component---node-modules-jxnblk-gatsby-theme-mdx-blog-src-templates-post-js":["/component---node-modules-jxnblk-gatsby-theme-mdx-blog-src-templates-post-js-72eda7e841b1d57edf79.js"],"component---node-modules-jxnblk-gatsby-theme-mdx-blog-src-templates-index-js":["/component---node-modules-jxnblk-gatsby-theme-mdx-blog-src-templates-index-js-37cf9ac4e62546032b7b.js"],"pages-manifest":["/pages-manifest-17836a5b8f0446d733fb.js"]};/*]]>*/</script><script src="/blog/webpack-runtime-79011fa241e85dc74868.js" async=""></script><script src="/blog/app-8378fda3fefeb913247c.js" async=""></script><script src="/blog/component---node-modules-jxnblk-gatsby-theme-mdx-blog-src-templates-post-js-72eda7e841b1d57edf79.js" async=""></script></body></html>
